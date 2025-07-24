@@ -1,44 +1,45 @@
-PowerShell Installation Script for Linux
+# PowerShell Installation Script for Linux
 
 This script automates the installation of PowerShell on a Linux system. It updates the system’s package list, installs required dependencies, downloads the latest PowerShell .deb package, installs it, and finally removes the installation file to keep your system clean.
-Prerequisites
 
-    A Debian-based Linux distribution (e.g., Ubuntu)
+## Prerequisites
 
-    wget package (automatically installed by the script)
+- A Debian-based Linux distribution (e.g., Ubuntu)
 
-Steps Performed by the Script
+- wget package (automatically installed by the script)
 
-    Updates package list using sudo apt-get update.
+## Steps Performed by the Script
 
-    Installs wget, which is required to download the PowerShell .deb package.
+- Updates package list using sudo apt-get update.
 
-    Downloads the PowerShell package version 7.5.2 from GitHub.
+- Installs wget, which is required to download the PowerShell .deb package.
 
-    Installs the downloaded .deb package using dpkg.
+- Downloads the PowerShell package version 7.5.2 from GitHub.
 
-    Fixes any missing dependencies using sudo apt-get install -f.
+- Installs the downloaded .deb package using dpkg.
 
-    Removes the downloaded PowerShell package to clean up the system.
+- Fixes any missing dependencies using sudo apt-get install -f.
 
-    Starts PowerShell using the pwsh command.
+- Removes the downloaded PowerShell package to clean up the system.
 
-Requirements
+- Starts PowerShell using the pwsh command.
+
+## Requirements
 
     A working internet connection to download the PowerShell package.
 
-Usage
+## Usage
 
-    Clone the repository or download the script.
+- Clone the repository or download the script.
 
-    Run the script with the following command:
+- Run the script with the following command:
 
-sudo bash install-powershell.sh
+        sudo bash install-powershell.sh
 
-After successful installation, PowerShell can be launched by running:
+- After successful installation, PowerShell can be launched by running:
 
-    pwsh
+        pwsh
 
-License
+### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
